@@ -1,0 +1,32 @@
+.calendar {
+  display: flex;
+  &__header {
+    display: flex;
+  }
+  &__day-label {
+    display: inline-block;
+    width: 128.7px;
+    height: 100px;
+    color: #000000;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+.day-label {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+
+  &__day-name {
+    display: block;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+  &__day-number {
+    display: block;
+    padding: 15px;
+    font-size: 22px;
+    opacity: 0.8;
+  }
+}

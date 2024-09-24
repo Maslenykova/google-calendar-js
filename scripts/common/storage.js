@@ -9,10 +9,21 @@ let storage = {
   };
   
   export const setItem = (key, value) => {
+    if (storage.hasOwnProperty(key)) {
+      storage[key] = value;
+    } else {
+      console.error(`Key "${key}" does not exist in storage.`);
+    }
     // ф-ция должна устанавливать значения в объект storage
   };
   
   export const getItem = (key) => {
+    if (storage.hasOwnProperty(key)) {
+      return storage[key];
+    } else {
+      console.error(`Key "${key}" does not exist in storage.`);
+      return null;
+    }
     // ф-ция должна возвращать по ключу значения из объекта storage
   };
   
