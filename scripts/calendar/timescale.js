@@ -1,9 +1,10 @@
 import { createNumbersArray } from '../common/createNumbersArray.js';
 
 export const renderTimescale = () => {
-const time = createNumbersArray(0, 23);
+const time = createNumbersArray(1, 24);
+
 const timescaleHTML = time.map(hour => {
-  const formattedHour = hour < 10 ? `${hour}` : hour; 
+  const formattedHour = hour <= 12 ? `${hour} AM` : `${hour} PM`; 
   
   return `
     <div class="time-slot">

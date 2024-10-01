@@ -88,7 +88,10 @@
 
 .time-slot {
   height: 49px;
-  width: 60px; }
+  width: 60px;
+  margin-top: 20px;
+  font-size: 15px;
+  opacity: 0.6; }
 
 * {
   box-sizing: border-box; }
