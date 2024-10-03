@@ -17,6 +17,7 @@ let dayMarkup = '';
 
   return dayMarkup;
 };
+
 generateDay();
 
 
@@ -27,9 +28,9 @@ generateDay();
   
   export const renderWeek = () => {
 
-      const weekDays = generateWeekRange(getItem('displayedWeekStart'));
+     let weekDays = generateWeekRange(getItem('displayedWeekStart'));
     
-      const weekMarkup = '';
+      let weekMarkup = '';
       weekDays.forEach((day) => {
         const dayNumber = day.getDate();
     
