@@ -12,7 +12,21 @@
     margin: 15px;
     padding: 15px;
   }
+  &__week-container {
+    display: flex;
+  }
+  &__week {
+    display: flex;
+    margin: 0;
+  }
+  &__day {
+    border: #000000 solid 1px;
+    padding-left: 120px;
+  }
+  &__time-scale {
+  }
 }
+
 .day-label {
   display: flex;
   flex-wrap: wrap;

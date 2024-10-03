@@ -71,6 +71,14 @@
     text-align: center;
     margin: 15px;
     padding: 15px; }
+  .calendar__week-container {
+    display: flex; }
+  .calendar__week {
+    display: flex;
+    margin: 0; }
+  .calendar__day {
+    border: #000000 solid 1px;
+    padding-left: 120px; }
 
 .day-label {
   display: flex;

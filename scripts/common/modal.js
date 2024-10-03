@@ -3,7 +3,7 @@ const modalContentElem = document.querySelector('.modal__content');
 
 export function openModal(y) {
     modalElem.classList.remove('hidden');
-    modalContentElem.style.centar = `${y}px`;
+    modalContentElem.style.center = `${y}px`;
   }
   
   export function closeModal() {
